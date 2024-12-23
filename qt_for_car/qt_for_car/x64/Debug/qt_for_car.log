@@ -1,0 +1,3 @@
+﻿  qt_for_car.cpp
+C:\Users\LENOVO\Desktop\qt_for_car\qt_for_car\qt_for_car.cpp(57,15): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  qt_for_car.vcxproj -> C:\Users\LENOVO\Desktop\qt_for_car\x64\Debug\qt_for_car.exe
