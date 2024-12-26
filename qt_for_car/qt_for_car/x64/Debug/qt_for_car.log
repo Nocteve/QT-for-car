@@ -1,3 +1,8 @@
-﻿  qt_for_car.cpp
-C:\Users\LENOVO\Desktop\qt_for_car\qt_for_car\qt_for_car.cpp(57,15): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+﻿   Qt/MSBuild: 3.3.1.1
+   Qt: 6.5.3
+  main.cpp
+C:\Users\LENOVO\Desktop\qt_for_car\qt_for_car\main.cpp(1,1): warning C4828: 文件包含在偏移 0x88 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+C:\Users\LENOVO\Desktop\qt_for_car\qt_for_car\main.cpp(1,1): warning C4828: 文件包含在偏移 0x8d 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+C:\Users\LENOVO\Desktop\qt_for_car\qt_for_car\main.cpp(1,1): warning C4828: 文件包含在偏移 0x8f 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+C:\Users\LENOVO\Desktop\qt_for_car\qt_for_car\main.cpp(1,1): warning C4828: 文件包含在偏移 0x91 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
   qt_for_car.vcxproj -> C:\Users\LENOVO\Desktop\qt_for_car\x64\Debug\qt_for_car.exe

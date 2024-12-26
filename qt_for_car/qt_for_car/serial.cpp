@@ -2,7 +2,7 @@
 #include <iostream>
 #include <windows.h>
 
-extern HANDLE hSerial;
+
 HANDLE hSerial;
 bool initSerialPort(const std::wstring& portName, DWORD baudRate) {
     hSerial = CreateFile(portName.c_str(),
@@ -62,22 +62,11 @@ void closeSerialPort() {
     CloseHandle(hSerial);
 }
 
-//void processSerialData(std::string& ledStatus, double& ledBlinkFrequency) {
-//    std::string receivedData;
-//    if (receiveDataFromESP32(receivedData)) {
-//        // 调试输出
-//        std::cout << "Received Data: " << receivedData << std::endl;
-//        system("pause");
-//
-//        if (receivedData.find("LED ON") != std::string::npos) {
-//            ledStatus = "打开";
-//        }
-//        else if (receivedData.find("LED OFF") != std::string::npos) {
-//            ledStatus = "关闭";
-//        }
-//        else if (receivedData.find("LED BLINK") != std::string::npos) {
-//            std::string frequencyStr = receivedData.substr(receivedData.find("at ") + 3);
-//            ledBlinkFrequency = atof(frequencyStr.c_str());
-//        }
-//    }
-//}
+unsigned char calculateBCC(const unsigned char* data, size_t length) {
+    unsigned char bcc = 0x00;  // 初始化BCC值为0
+    for (size_t i = 0; i < length; i++) {
+        bcc ^= data[i];  // 对每个字节进行异或运算
+    }
+    return bcc;
+}
+
